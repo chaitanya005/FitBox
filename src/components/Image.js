@@ -7,8 +7,9 @@ const Image = ({ className, src, srcDark, srcSet, srcSetDark, alt }) => {
   return (
     <img
       className={className}
-      srcSet={darkMode.value ? srcSetDark : srcSet}
-      src={darkMode.value ? srcDark : src}
+      // srcSet={darkMode.value ? srcSetDark : srcSet}
+      // src={darkMode.value ? srcDark : src}
+      src={srcDark}
       alt={alt}
     />
   );

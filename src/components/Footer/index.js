@@ -75,7 +75,7 @@ const Footer = () => {
                   alt="Fitness Pro"
                 />
               </Link>
-              {/* <Theme className={styles.theme} /> */}
+              <Theme className={styles.theme} />
             </div>
             <div className={cn(styles.item, { [styles.active]: visible })}>
               <div
