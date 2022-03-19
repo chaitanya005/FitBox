@@ -10,23 +10,23 @@ import Image from "../Image";
 const menu = [
   {
     title: "Life Design",
-    url: "/lifestyle",
+    url: "/life-design",
   },
   {
     title: "Future Desgin",
-    url: "/pricing",
+    url: "/life-design",
   },
   {
     title: "Community Desgin",
-    url: "/class01",
+    url: "/life-design",
   },
   {
     title: "About",
-    url: "/features",
+    url: "/about",
   },
   {
     title: "Stores",
-    url: "/download",
+    url: "#",
   },
 ];
 
