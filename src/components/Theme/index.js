@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import cn from "classnames";
 import styles from "./Theme.module.sass";
 import useDarkMode from "use-dark-mode";
 import Icon from "../Icon";
 
 const Theme = ({ className }) => {
-  const darkMode = useDarkMode(true);
+  const darkMode = useDarkMode(false);
+
+  useEffect(() => {
+    darkMode.enable();
+  }, []);
 
   return (
     <label className={cn(styles.theme, className)}>
-      <input
+      {/*  <input
         className={styles.input}
         checked={darkMode.value}
         onChange={darkMode.toggle}
@@ -21,7 +25,7 @@ const Theme = ({ className }) => {
           <Icon name="moon" size="24" />
           <Icon name="sun" size="24" />
         </span>
-      </span>
+      </span> */}
     </label>
   );
 };
