@@ -1,0 +1,103 @@
+@import ../../../styles/helpers
+
+.title
+    margin-bottom: 40px
+    text-align: center
+    text-transform: uppercase
+    +m
+        text-align: center
+
+.list
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -16px
+    +t
+        display: block
+        margin: 0
+        padding: 48px 0
+    +m
+        padding: 0
+        border: none
+    +dark
+        border-color: $neutrals3
+
+.item
+    display: flex
+    flex-direction: column
+    flex: 0 0 calc(50% - 32px)
+    width: calc(50% - 32px)
+    margin: 80px 16px -1px
+    padding-bottom: 48px
+    cursor: pointer
+    +x
+        cursor: default 
+    +t
+        width: 100%
+        margin: 0
+        padding: 0
+        border: none
+    +m
+        display: block
+        text-align: center
+    +dark
+        border-color: $neutrals3
+    &:not(:last-child)
+        +t
+            margin-bottom: 48px
+        +m
+            margin-bottom: 40px
+    .button
+        position: absolute
+        top: calc(100% + 24px)
+        left: 0
+        visibility: hidden
+        opacity: 0
+        +x
+            position: static
+            margin-top: 24px
+            visibility: visible
+            opacity: 1
+        +m
+            margin-top: 16px
+
+.preview
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    width: 160px
+    height: 160px
+    margin-right: 32px
+    border-radius: 24px
+    +m
+        margin: 0 auto 16px
+    img
+        max-width: 40px
+
+.details
+    position: relative
+    transition: transform .2s
+
+.status
+    margin-bottom: 12px
+    +m
+        line-height: 22px
+
+.subtitle
+    margin: 20px 0px
+    text-transform: uppercase
+    +body-2
+
+.description
+    +caption-1
+    color: $neutrals4
+
+.btns
+    margin-top: 80px
+    text-align: center
+    +t
+        margin-top: 64px
+    +m
+        margin-top: 48px
+
+
