@@ -30,19 +30,35 @@ const list = [
   },
 ];
 
-const Clients = () => {
+const Clients = ({ title, listOne, listTwo }) => {
   return (
     <div className={styles.clients}>
       <div className={cn("container", styles.container)}>
-        <ScrollParallax className={styles.title}>
-          EVERYONE IS TALKING ABOUT US!
+        <ScrollParallax className={cn("h2", styles.title)}>
+          {title}
         </ScrollParallax>
         <div className={styles.list}>
           {list.map((x, index) => (
             <div className={styles.logo} key={index}>
-              <img src={x.url} alt={x.title} />
+              <img src={x.url} alt="" />
             </div>
           ))}
+        </div>
+        <div className={styles.list}>
+          {listOne &&
+            listOne.map((x, index) => (
+              <div className={styles.logo} key={index}>
+                <img src={x.url} alt="" />
+              </div>
+            ))}
+        </div>
+        <div className={styles.list}>
+          {listTwo &&
+            listTwo.map((x, index) => (
+              <div className={styles.logo} key={index}>
+                <img src={x.url} alt="" />
+              </div>
+            ))}
         </div>
       </div>
     </div>

@@ -5,7 +5,6 @@ import styles from "./Book.module.sass";
 import Icon from "../../../components/Icon";
 import Image from "../../../components/Image";
 import ScrollParallax from "../../../components/ScrollParallax";
-
 const items = [
   {
     title: "For the beginners",
@@ -24,6 +23,13 @@ const items = [
   {
     title: "Premium (limited)",
     color: "#3772FF",
+    images: "/images/content/lightning.svg",
+    alt: "lightning",
+    content: "You never workout before, it’s now a good start",
+  },
+  {
+    title: "Premium (limited)",
+    color: "#9757D7",
     images: "/images/content/lightning.svg",
     alt: "lightning",
     content: "You never workout before, it’s now a good start",
@@ -97,7 +103,7 @@ const Book = () => {
             ))}
           </div>
           <div className={styles.btns}>
-            <Link className={cn("button", styles.button)} to="/class02-details">
+            <Link className={cn("button", styles.button)} to="/">
               <span>Take a Test</span>
             </Link>
           </div>

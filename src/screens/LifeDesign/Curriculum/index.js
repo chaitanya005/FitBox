@@ -4,6 +4,7 @@ import styles from "./Hero.module.sass";
 import Dropdown from "../../../components/Dropdown";
 import Icon from "../../../components/Icon";
 import Item from "./Item";
+import { Link } from "react-router-dom";
 
 const items = [
   {
@@ -50,6 +51,28 @@ const items = [
       "What is Stacks Design System",
     ],
   },
+  {
+    title: "Hoisting",
+    icon: "pen",
+    items: [
+      "How does it work",
+      "How to start with Stacks",
+      "Dose it suppport Dark Mode",
+      "Does it support Auto-Layout",
+      "What is Stacks Design System",
+    ],
+  },
+  {
+    title: "Staging",
+    icon: "pen",
+    items: [
+      "Dose it suppport Dark Mode",
+      "Does it support Auto-Layout",
+      "What is Stacks Design System",
+      "How does it work",
+      "How to start with Stacks",
+    ],
+  },
 ];
 
 const Curriculum = () => {
@@ -62,15 +85,8 @@ const Curriculum = () => {
     <div className={cn("section", styles.section)}>
       <div className={cn("container", styles.container)}>
         <div className={styles.top}>
-          <div className={styles.stage}>learn how to get started</div>
-          <h1 className={cn("h2", styles.title)}>Frequently asked questions</h1>
-          <div className={styles.info}>
-            Join Stacks community now to get free updates and also alot of
-            freebies are waiting for you or{" "}
-            <a href="/#" rel="noopener noreferrer">
-              Contact Support
-            </a>
-          </div>
+          <h1 className={cn("h2", styles.title)}>Curriculum</h1>
+
           <Dropdown
             className={cn("mobile-show", styles.dropdown)}
             value={direction}
@@ -101,6 +117,9 @@ const Curriculum = () => {
               .items.map((x, index) => (
                 <Item className={styles.item} item={x} key={index} />
               ))}
+            <Link className={cn("button", styles.button)} to="#">
+              Download
+            </Link>
           </div>
         </div>
       </div>

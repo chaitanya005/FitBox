@@ -5,117 +5,91 @@ import styles from "./Header.module.sass";
 import DropdownMenu from "./DropdownMenu";
 import Icon from "../Icon";
 import Image from "../Image";
+import Dropdown from "./Dropdown";
 
 const navLinks = [
   {
-    title: "LIFE DESGIN",
-    url: "/life-design",
+    title: "Product",
+    dropdown: [
+      {
+        title: "Life Design",
+        // icon: "user",
+        url: "/life-design",
+      },
+      {
+        title: "Future Design",
+        // icon: "user",
+        url: "/life-design",
+      },
+    ],
   },
   {
-    title: "FUTURE DESIGN",
-    url: "/life-design",
+    title: "SERVICES",
+    dropdown: [
+      {
+        title: "Find a Life Design Coach",
+        url: "/life",
+      },
+      {
+        title: "Find a Life Design Trainer",
+        url: "/life",
+      },
+      {
+        title: "Online Workout Training",
+        url: "/life",
+      },
+    ],
   },
   {
-    title: "COMMUNITY DESIGN",
-    url: "/life-design",
+    title: "Shop",
+    dropdown: [
+      {
+        title: "Accessories",
+        url: "/life",
+      },
+      {
+        title: "Supplements",
+        url: "/life",
+      },
+      {
+        title: "Merchandise",
+        url: "/life",
+      },
+    ],
+  },
+  {
+    title: "RESOURCES",
+    dropdown: [
+      {
+        title: "Customer Stoties",
+        url: "/life",
+      },
+      {
+        title: "Coach Stories",
+        url: "/life",
+      },
+      {
+        title: "Institutional Stories",
+        url: "/life",
+      },
+      {
+        title: "Press",
+        url: "/life",
+      },
+      {
+        title: "Events",
+        url: "/life",
+      },
+      {
+        title: "Reports",
+        url: "/life",
+      },
+    ],
   },
   {
     title: "ABOUT",
     url: "/about",
   },
-  {
-    title: "STORIES",
-    url: "#",
-  },
-  // {
-  //   title: "Class",
-  //   content: {
-  //     menu: [
-  //       {
-  //         title: "Program Videos",
-  //         url: "/class01",
-  //         image: "/images/menu-video.svg",
-  //       },
-  //       {
-  //         title: "Premium Class",
-  //         url: "/class02",
-  //         image: "/images/menu-class.svg",
-  //       },
-  //     ],
-  //     links: [
-  //       {
-  //         title: "Sweet and Tone",
-  //         url: "/class01-details",
-  //         image: "/images/content/header-pic-1.png",
-  //         image2x: "/images/content/header-pic-1@2x.png",
-  //         category: "black",
-  //         categoryText: "featured class",
-  //         avatar: "/images/content/avatar-1.png",
-  //         trainer: "Zack Beier",
-  //         content:
-  //           "Sweet and Tone is a seven-day bodyweight training program designed to boost your strength and endurance over the course of a week.",
-  //         level: "green",
-  //         levelText: "beginner",
-  //       },
-  //       {
-  //         title: "Sweet and Tone",
-  //         url: "/class01-details",
-  //         image: "/images/content/header-pic-2.png",
-  //         image2x: "/images/content/header-pic-2@2x.png",
-  //         category: "green",
-  //         categoryText: "yoga",
-  //         avatar: "/images/content/avatar-2.png",
-  //         trainer: "Zack Beier",
-  //       },
-  //       {
-  //         title: "Sweet and Tone",
-  //         url: "/class01-details",
-  //         image: "/images/content/header-pic-3.png",
-  //         image2x: "/images/content/header-pic-3@2x.png",
-  //         category: "purple",
-  //         categoryText: "mindfulness",
-  //         avatar: "/images/content/avatar-3.png",
-  //         trainer: "Zack Beier",
-  //       },
-  //       {
-  //         title: "Sweet and Tone",
-  //         url: "/class01-details",
-  //         image: "/images/content/header-pic-4.png",
-  //         image2x: "/images/content/header-pic-4@2x.png",
-  //         category: "red",
-  //         categoryText: "fitness",
-  //         avatar: "/images/content/avatar-4.png",
-  //         trainer: "Zack Beier",
-  //       },
-  //     ],
-  //     trainer: [
-  //       {
-  //         title: "Boyd Reinger",
-  //         avatar: "/images/content/avatar-1.png",
-  //         type: "Personal trainer",
-  //       },
-  //       {
-  //         title: "Randal Jacobson",
-  //         avatar: "/images/content/avatar-2.png",
-  //         type: "Personal trainer",
-  //       },
-  //       {
-  //         title: "Dwight Schamberger",
-  //         avatar: "/images/content/avatar-3.png",
-  //         type: "Personal trainer",
-  //       },
-  //       {
-  //         title: "Omari Gulgowski",
-  //         avatar: "/images/content/avatar-4.png",
-  //         type: "Personal trainer",
-  //       },
-  //     ],
-  //   },
-  // },
-  // {
-  //   title: "Lifestyle",
-  //   url: "/lifestyle",
-  // },
 ];
 
 const socials = [
@@ -172,9 +146,9 @@ const Headers = () => {
         <div className={cn(styles.wrap, { [styles.active]: visibleNav })}>
           <nav className={styles.nav}>
             {navLinks.map((x, index) =>
-              x.content ? (
-                <DropdownMenu
-                  className={styles.group}
+              x.dropdown ? (
+                <Dropdown
+                  className={styles.dropdown}
                   item={x}
                   key={index}
                   setValue={setVisibleNav}

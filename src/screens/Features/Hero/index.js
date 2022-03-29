@@ -11,16 +11,9 @@ const Hero = ({ scrollToRef }) => {
     <div className={styles.hero}>
       <div className={cn("container", styles.container)}>
         <div className={styles.wrap}>
-          <div className={cn("stage", styles.stage)}>
-            Train smarter. get stronger
-          </div>
           <h1 className={cn("h1", styles.title)}>
             Simple fitness experience for everyone.
           </h1>
-          <div className={styles.text}>
-            Track your workouts, get better results, and be the bestversion of
-            you. Less thinking, more lifting.
-          </div>
           <div className={styles.btns}>
             <Link className={cn("button", styles.button)} to="/download">
               Take a Test

@@ -34,20 +34,6 @@ const items = [
     images: "/images/content/lightning.svg",
     alt: "lightning",
   },
-  {
-    title: "Soocial",
-    url: "/class02",
-    color: "#3772FF",
-    images: "/images/content/lightning.svg",
-    alt: "lightning",
-  },
-  {
-    title: "Environmental",
-    url: "/class02",
-    color: "#9757D7",
-    images: "/images/content/lightning.svg",
-    alt: "lightning",
-  },
 ];
 
 const Program = () => {
@@ -88,9 +74,6 @@ const Program = () => {
                 alt="Bottle"
               />
             </div>
-            <Link className={cn("button", styles.button)} to="/class02-details">
-              Take a Test
-            </Link>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import cn from "classnames";
 import styles from "./Hero.module.sass";
 import Subscription from "../../../components/Subscription";
 import Image from "../../../components/Image";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -21,9 +22,7 @@ const Hero = () => {
         </div>
         <div className={styles.col}>
           <div className={styles.wrap}>
-            <div className={cn("stage", styles.stage)}>
-              time to get fitness pro
-            </div>
+            <div className={cn("stage", styles.stage)}></div>
             <h1 className={cn("h1", styles.title)}>
               Fitness Pro for any device.
             </h1>
@@ -31,10 +30,13 @@ const Hero = () => {
               Track your workouts, get better results, and be the best version
               of you. Less thinking, more lifting.
             </div>
-            <Subscription
+            {/* <Subscription
               className={styles.subscription}
               placeholder="Enter your email"
-            />
+            /> */}
+            <Link to="/" className={cn("button", styles.button)}>
+              Click Here
+            </Link>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import cn from "classnames";
 import styles from "./Plan.module.sass";
 import Icon from "../../../components/Icon";
+import Switch from "react-switch";
 
 const options = [
   {
@@ -114,6 +115,10 @@ const data = [
 
 const Plan = () => {
   const [more, setMore] = useState([false, false, false]);
+  const [checked, setChecked] = useState(false);
+  const handleChange = (nextChecked) => {
+    setChecked(nextChecked);
+  };
 
   const handleClick = (index) => {
     let newMore = [...more];
@@ -141,6 +146,27 @@ const Plan = () => {
         <h1 className={cn("h1", styles.title)}>
           Choose a plan that’s right for you
         </h1>
+        <label
+          style={{
+            position: "absolute",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: "fit-content",
+          }}
+        >
+          <span>6 months</span>
+          <Switch
+            onChange={handleChange}
+            checked={checked}
+            uncheckedIcon={false}
+            checkedIcon={false}
+            onColor="#FECC00"
+            className="react-switch"
+            activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.6)"
+          />
+          <span>12 months</span>
+        </label>
+        <br />
         <div className={styles.table}>
           <div className={styles.row}>
             <div className={styles.col}>
@@ -152,12 +178,12 @@ const Plan = () => {
                     {option.items.map((item, index) => (
                       <div className={styles.parameter} key={index}>
                         <div className={styles.label}>{item.title}</div>
-                        {/* <div className={styles.hint}>
+                        <div className={styles.hint}>
                           <Icon name="info" size="10" />
                           <div className={styles.tooltip}>
                             {item.description}
                           </div>
-                        </div> */}
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -223,6 +249,14 @@ const Plan = () => {
           </div>
         </div>
       </div>
+      <style>
+        {`
+        .react-switch {
+          vertical-align: middle;
+          margin: 0 10px;
+        }
+      `}
+      </style>
     </div>
   );
 };

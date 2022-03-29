@@ -34,33 +34,6 @@ const items = [
     content:
       "A 7-days training program designed to boost your strength & endurance over the course of a week.",
   },
-  {
-    title: "Beginners",
-    url: "/class02-details",
-    color: "#45B26B",
-    image: "/images/content/user.svg",
-    alt: "user",
-    content:
-      "A 7-days training program designed to boost your strength & endurance over the course of a week.",
-  },
-  {
-    title: "Advanced",
-    url: "/class02-details",
-    color: "#9757D7",
-    image: "/images/content/medal-1.svg",
-    alt: "medal",
-    content:
-      "A 7-days training program designed to boost your strength & endurance over the course of a week.",
-  },
-  {
-    title: "Premium",
-    url: "/class02-details",
-    color: "#3772FF",
-    image: "/images/content/lightning.svg",
-    alt: "lightning",
-    content:
-      "A 7-days training program designed to boost your strength & endurance over the course of a week.",
-  },
 ];
 
 const SlickArrow = ({ currentSlide, slideCount, children, ...props }) => (
@@ -125,12 +98,6 @@ const Programs = ({ classNameTitle, title, classNameSection, scrollToRef }) => {
                   </div>
                   <div className={styles.subtitle}>{x.title}</div>
                   <div className={styles.content}>{x.content}</div>
-                  <Link
-                    className={cn("button-stroke", styles.button)}
-                    to={x.url}
-                  >
-                    Book a class
-                  </Link>
                 </div>
               </ScrollParallax>
             ))}

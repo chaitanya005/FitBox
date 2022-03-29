@@ -135,19 +135,19 @@ const LifeDesgin = () => {
         title={"IS FITBOX RIGHT FOR YOU?"}
       />
       <Match title={"Are You a Match For Fitbox?"} classNameTitle="h2" />
-      <Mantra />
+      {/* <Mantra /> */}
       <Coaches />
       <Cohort />
       <Info
         className="section-border-top"
-        title={"Why I Created this program"}
+        title={"This is not a typical Course"}
         text={infoOne}
         imgUrl="/images/content/symbol-color.png"
       />
       <Programs title={"What's Included"} classNameTitle="h2" />
       <Info
         className="section-border-top"
-        title={"Why I Created this program"}
+        title={"This is not a normal Cohort"}
         text={infoOne}
         imgUrl="/images/content/symbol-color.png"
       />

@@ -14,6 +14,8 @@ import Advantages from "../../components/Advantages";
 import Workouts from "../../components/Workouts";
 import Offer from "../../components/Offer";
 import Cards from "./Hero/Cards";
+import Testimonials from "./Testimonials";
+import Programs from "../../components/Programs";
 
 const items = [
   {
@@ -69,6 +71,61 @@ const aboutItems = [
   },
 ];
 
+const affiliatorsListOne = [
+  {
+    title: "Forbes",
+    url: "/",
+  },
+  {
+    title: "Yourstory",
+    url: "/images/content/rotashow.svg",
+  },
+  {
+    title: "Outlook",
+    url: "/images/content/rotashow.svg",
+  },
+  {
+    title: "velocity9",
+    url: "/images/content/velocity9.svg",
+  },
+  {
+    title: "Fortune",
+    url: "/images/content/travelers.svg",
+  },
+  {
+    title: "Harvard Business Review ",
+    url: "/images/content/travelers.svg",
+  },
+];
+
+const affiliatorsListTwo = [
+  {
+    title: "Yourstory",
+    url: "/images/content/rotashow.svg",
+  },
+
+  {
+    title: "Fortune",
+    url: "/images/content/travelers.svg",
+  },
+  {
+    title: "Forbes",
+    url: "/images/content/waves.svg",
+  },
+  {
+    title: "Outlook",
+    url: "/images/content/rotashow.svg",
+  },
+  {
+    title: "Harvard Business Review ",
+    url: "/images/content/goldlines.svg",
+  },
+  {
+    title: "velocity9",
+    url: "/images/content/velocity9.svg",
+  },
+];
+
 const Home = () => {
   const scrollToRef = useRef(null);
 
@@ -76,7 +133,7 @@ const Home = () => {
     <>
       <Hero scrollToRef={scrollToRef} />
       <Cards />
-      <Clients />
+      <Clients title="Every one is Talking About us" />
       <Steps scrollToRef={scrollToRef} />
       <Intro />
       <Book />
@@ -94,7 +151,16 @@ const Home = () => {
       <Team />
       <Review className="section" />
       <Quality />
-      <Advantages />
+      <Clients
+        title="A Corporate Afffiliators"
+        listOne={affiliatorsListOne}
+        listTwo={affiliatorsListTwo}
+      />
+      <br />
+      <br />
+      <br />
+      <Testimonials />
+      {/* <Advantages /> */}
       <Workouts />
       <Offer
         className="section-border-top"
