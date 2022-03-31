@@ -22,7 +22,7 @@ const Dropdown = ({ className, item, setValue }) => {
       >
         <button className={styles.head} onClick={() => setVisible(!visible)}>
           {item.title}
-          <Icon name="arrow-down" size="16" />
+          {/* <Icon name="arrow-down" size="16" /> */}
         </button>
         <div className={styles.body}>
           {item.dropdown.map((x, index) => (

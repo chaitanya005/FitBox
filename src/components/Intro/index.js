@@ -39,7 +39,7 @@ const Intro = ({ scrollToRef }) => {
             Fitness Pro helps track your workouts, get better results, and be
             the best version of you. Less thinking, more lifting 🔥🏀
           </div>
-          <Link className={cn("button", styles.button)} to="/download">
+          <Link className={cn("button", styles.button)} to="/">
             Take a test
           </Link>
         </div>

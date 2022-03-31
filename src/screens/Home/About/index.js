@@ -31,7 +31,7 @@ const About = ({ items, title, imgUrl, bgRequired }) => {
             {bgRequired ? (
               <div className={styles.bg}>
                 <img
-                  srcSet="/images/content/about-pic@2x.png 2x"
+                  srcSet="/images/content/img-container.png 2x"
                   src={imgUrl}
                   alt="About pic"
                 />

@@ -36,7 +36,7 @@ const items = [
   },
 ];
 
-const Book = () => {
+const Book = ({ btnHide }) => {
   return (
     <div className={cn("", styles.section)}>
       <div className={cn("container", styles.container)}>
@@ -102,11 +102,15 @@ const Book = () => {
               </div>
             ))}
           </div>
-          <div className={styles.btns}>
-            <Link className={cn("button", styles.button)} to="/">
-              <span>Take a Test</span>
-            </Link>
-          </div>
+          {!btnHide ? (
+            <div className={styles.btns}>
+              <Link className={cn("button", styles.button)} to="/">
+                <span>Take a Test</span>
+              </Link>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>

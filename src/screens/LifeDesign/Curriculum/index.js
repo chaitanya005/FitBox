@@ -85,8 +85,8 @@ const Curriculum = () => {
     <div className={cn("section", styles.section)}>
       <div className={cn("container", styles.container)}>
         <div className={styles.top}>
-          <h1 className={cn("h2", styles.title)}>Curriculum</h1>
-
+          <div className={styles.stage}>Learn How To get Started</div>
+          <h1 className={cn("h2", styles.title)}>Course Curriculum</h1>
           <Dropdown
             className={cn("mobile-show", styles.dropdown)}
             value={direction}

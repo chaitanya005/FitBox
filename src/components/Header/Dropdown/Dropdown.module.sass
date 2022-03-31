@@ -16,7 +16,7 @@
             transform: translate(-50%,0)
             visibility: visible
             opacity: 1
-            +m
+            +d
                 display: block
                 transform: translate(0)
 
@@ -32,7 +32,7 @@
     text-transform: uppercase
     transition: color .2s
     -webkit-tap-highlight-color: rgba(0,0,0,0)
-    +m
+    +d
         width: 100%
         padding: 0 22px
         border-left: 2px solid transparent
@@ -44,7 +44,7 @@
         margin-left: 4px
         fill: $neutrals4
         transition: all .2s
-        +m
+        +d
             width: 32px
             height: 32px
             margin-left: auto
@@ -70,7 +70,7 @@
     visibility: hidden
     opacity: 0
     transition: all .3s
-    +m
+    +d
         position: static
         display: none
         width: 100%
@@ -81,7 +81,7 @@
         transform: translate(0)
     +dark
         background: $neutrals2
-        +m
+        +d
             background: none
     &:before
         content: ""
@@ -92,7 +92,7 @@
         height: 12px
         transform: translateX(-50%)
         background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='9' fill='none' viewBox='0 0 24 9'%3E%3Cpath d='M6.343 2.657L0 9h24l-6.343-6.343a8 8 0 0 0-11.314 0z' fill='%23fcfcfd'/%3E%3C/svg%3E") no-repeat 50% 100% / 100% auto
-        +m
+        +d
             display: none
         +dark
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='9' fill='none' viewBox='0 0 24 9'%3E%3Cpath d='M6.343 2.657L0 9h24l-6.343-6.343a8 8 0 0 0-11.314 0z' fill='%2323262F'/%3E%3C/svg%3E")
@@ -104,7 +104,7 @@
     +button-2
     color: $neutrals4
     transition: color .2s
-    +m
+    +d
         height: 56px
         padding: 0 16px
         border-radius: 8px
@@ -113,7 +113,7 @@
         font-weight: 500
     +dark
         color: $neutrals4
-        +m
+        +d
             color: $neutrals8
     svg
         flex-shrink: 0
@@ -140,7 +140,7 @@
                     fill: $neutrals8
     &:not(:last-child)
         border-bottom: 1px solid $neutrals6
-        +m
+        +d
             border: none
         +dark
             border-color: $neutrals3

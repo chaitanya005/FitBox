@@ -21,7 +21,7 @@ const Hero = ({ scrollToRef }) => {
             Track your workouts, get better results, and be the best version of
             you. Less thinking, more lifting.
           </div>
-          <Link className={cn("button", styles.button)} to="/class02-details">
+          <Link className={cn("button", styles.button)} to="/">
             Book a class
           </Link>
         </div>

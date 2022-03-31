@@ -15,7 +15,7 @@ const Hero = ({ scrollToRef }) => {
             Simple fitness experience for everyone.
           </h1>
           <div className={styles.btns}>
-            <Link className={cn("button", styles.button)} to="/download">
+            <Link className={cn("button", styles.button)} to="/">
               Take a Test
             </Link>
           </div>

@@ -24,10 +24,6 @@ const list = [
     title: "Harvard Business Review ",
     url: "/images/content/goldlines.svg",
   },
-  {
-    title: "velocity9",
-    url: "/images/content/velocity9.svg",
-  },
 ];
 
 const Clients = ({ title, listOne, listTwo }) => {

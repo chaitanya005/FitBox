@@ -44,7 +44,7 @@ const Story = () => {
                 </ScrollParallax>
               ))}
             </div>
-            <Link className={cn("button-stroke", styles.button)} to="/class02">
+            <Link className={cn("button-stroke", styles.button)} to="/">
               Go to class
             </Link>
           </div>

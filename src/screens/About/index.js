@@ -17,7 +17,7 @@ const About = () => {
   const scrollToRef = useRef(null);
   return (
     <>
-      <AboutHero />
+      {/* <AboutHero /> */}
       <Video imgUrl={"/images/content/landing.png"} />
       <Hero scrollToRef={scrollToRef} />
       <Programs
@@ -27,11 +27,11 @@ const About = () => {
           over the volume for a perfect physique"
       />
       <Steps scrollToRef={scrollToRef} />
-      <Book />
+      <Book btnHide={true} />
       <br />
       <br />
       <Program />
-      <Quality />
+      <Quality title={"Our Goals"} />
       <Offer
         className="section-border-top"
         title={"Our Vision"}

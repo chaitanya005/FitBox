@@ -4,7 +4,7 @@
     position: relative
     z-index: 10
     padding: 48px 0
-    +m
+    +d
         padding-bottom: 24px
         box-shadow: none
     &.wide
@@ -50,7 +50,7 @@
             display: flex
     +t
         padding: 0 40px 64px
-    +m
+    +d
         flex-direction: column
         align-items: flex-start
         min-height: calc(100vh - 104px)
@@ -78,7 +78,7 @@
     +t
         flex: 0 0 calc(100% - 344px)
         max-width: calc(100% - 344px)
-    +m
+    +d
         align-items: stretch
         flex: auto 0 calc(100% + 64px)
         width: calc(100% + 64px)
@@ -93,7 +93,7 @@
         +x
             margin-right: 24px
         +d
-            margin: 0 0 48px
+            margin: 0
         +m
             margin: 0
 
@@ -110,7 +110,7 @@
         letter-spacing: -.01em
     +t
         font-size: 32px
-    +m
+    +d
         padding: 18px 32px 
         font-size: 24px
     &:hover
@@ -119,7 +119,7 @@
             color: $neutrals8
     &.active
         color: $neutrals2
-        +m
+        +d
             box-shadow: inset 2px 0 0 0 $red
         +dark
             color: $neutrals8
@@ -140,8 +140,8 @@
 .contact
     display: none
     +d
-        display: block
-        margin-bottom: 32px
+        display: none
+        // margin-bottom: 32px
     +m
         display: none
 
@@ -165,7 +165,7 @@
 .socials
     display: flex
     margin: 0 auto
-    +m
+    +d
         display: none
 
 .social

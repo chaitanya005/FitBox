@@ -39,51 +39,22 @@
 .wrap
     margin: 0 -12px
 
-// .item
-//     height: 100%
-//     padding: 64px 32px
-//     background: $neutrals7
-//     border-radius: 20px
-//     transition: all .2s
-//     +d
-//         padding: 48px 24px
-//     +m
-//         padding: 64px 24px
-//     &:hover
-//         box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.1)
-//         background: $neutrals8
-//         .button
-//             background: $red
-//             box-shadow: 0 0 0 2px $red inset
-//             color: $neutrals8
-//             &:hover
-//                 background: darken($red, 10)
-//                 box-shadow: 0 0 0 2px darken($red, 10) inset
-//                 color: $neutrals8
-//     +dark
-//         background: $neutrals2
-//         &:hover
-//             background: transparent
-//             box-shadow: inset 0 0 0 1px $neutrals2
-
 .item
     position: relative
     padding: 40px 32px
-    box-shadow: inset 0 0 0 1px $neutrals6 !important
     border-radius: 12px
     cursor: pointer
     transition: box-shadow .2s
-    background: none !important
     +d
         padding: 40px 16px
     +m
         padding: 24px 12px
         max-width: none !important
     +dark
-        box-shadow: inset 0 0 0 1px $neutrals3
         background: $neutrals2
     &:hover
-        box-shadow: inset 0 0 0 2px $neutrals5
+        box-shadow: inset 0 0 0 2px $neutrals2 !important
+        background: transparent
         +dark
             box-shadow: inset 0 0 0 2px $neutrals4
 

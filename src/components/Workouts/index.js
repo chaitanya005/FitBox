@@ -58,7 +58,7 @@ const Workouts = () => {
             ))}
           </ul>
           <div className={styles.btns}>
-            <Link className={cn("button", styles.button)} to="/pricing">
+            <Link className={cn("button", styles.button)} to="/">
               Take a Test
             </Link>
           </div>

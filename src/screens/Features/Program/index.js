@@ -8,28 +8,28 @@ import ScrollParallax from "../../../components/ScrollParallax";
 const items = [
   {
     title: "Mental",
-    url: "/class01",
+    url: "/",
     color: "#45B26B",
     images: "/images/content/lightning.svg",
     alt: "lightning",
   },
   {
     title: "Emotional",
-    url: "/class02",
+    url: "/",
     color: "#9757D7",
     images: "/images/content/lightning.svg",
     alt: "lightning",
   },
   {
     title: "Physical",
-    url: "/class02",
+    url: "/",
     color: "#3772FF",
     images: "/images/content/lightning.svg",
     alt: "lightning",
   },
   {
     title: "Spiritual",
-    url: "/class02",
+    url: "/",
     color: "#FECC00",
     images: "/images/content/lightning.svg",
     alt: "lightning",
@@ -38,7 +38,10 @@ const items = [
 
 const Program = () => {
   return (
-    <div className={cn("section-pb", styles.book)}>
+    <div
+      className={cn("section-pb", styles.book)}
+      style={{ paddingBottom: "20px" }}
+    >
       <div className={cn("container", styles.container)}>
         <div className={styles.head}>
           <div className={cn("h2", styles.title)}>

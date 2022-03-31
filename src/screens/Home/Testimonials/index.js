@@ -123,8 +123,18 @@ const Programs = ({ classNameTitle, title, classNameSection, scrollToRef }) => {
             {items.map((x, index) => (
               <>
                 <ScrollParallax className={styles.slide} key={index}>
-                  <div className={cn("programs-item", styles.item)}>
-                    <div className={styles.content}>{x.content}</div>
+                  <div className={cn(styles.programsItem, styles.item)}>
+                    <div className={styles.content}>
+                      {x.content}
+                      <br />
+                      <div style={{ marginTop: "2%" }}>
+                        <div class={styles.clipStar}></div>
+                        <div class={styles.clipStar}></div>
+                        <div class={styles.clipStar}></div>
+                        <div class={styles.clipStar}></div>
+                        <div class={styles.clipStar}></div>
+                      </div>
+                    </div>
                   </div>
                   <Item className={styles.item} item={x} />
                 </ScrollParallax>

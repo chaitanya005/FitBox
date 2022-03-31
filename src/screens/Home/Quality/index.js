@@ -44,10 +44,11 @@ const items = [
   },
 ];
 
-const Quality = () => {
+const Quality = ({ title }) => {
   return (
     <div className={cn("section-pb", styles.section)}>
       <div className={cn("container", styles.container)}>
+        <div className={cn("h2", styles.mainTitle, styles.title)}>{title}</div>
         <div className={styles.list}>
           {items.map((x, index) => (
             <ScrollParallax className={styles.item} key={index}>

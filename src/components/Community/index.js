@@ -31,7 +31,7 @@ const Community = () => {
         </div>
         <div className={styles.bg}>
           <img
-            srcSet="/images/content/about-pic@2x.png 2x"
+            srcSet="/images/content/img-container.png 2x"
             src="/images/content/img-container.png"
             alt="About pic"
           />

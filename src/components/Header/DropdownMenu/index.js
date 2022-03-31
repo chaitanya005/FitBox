@@ -36,7 +36,7 @@ const DropdownMenu = ({ item, className, setValue }) => {
                 <div className={styles.col}>
                   <Link
                     className={styles.direction}
-                    to="/class01"
+                    to="/"
                     onClick={() => handleClick()}
                   >
                     <div className={styles.info}>

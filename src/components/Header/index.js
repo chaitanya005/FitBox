@@ -21,6 +21,16 @@ const navLinks = [
         // icon: "user",
         url: "/life-design",
       },
+      {
+        title: "Community Design",
+        // icon: "user",
+        url: "/life-design",
+      },
+      {
+        title: "Conscience Design",
+        // icon: "user",
+        url: "/life-design",
+      },
     ],
   },
   {
@@ -82,6 +92,10 @@ const navLinks = [
       },
       {
         title: "Reports",
+        url: "/life",
+      },
+      {
+        title: "Fit Mafia",
         url: "/life",
       },
     ],

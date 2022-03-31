@@ -58,8 +58,7 @@
                 box-shadow: 0 0 0 2px darken($y, 10) inset
                 color: $neutrals8
     +dark
-        background: $neutrals2
-     
+        background: $neutrals3
 
 .icon
     display: flex
@@ -75,6 +74,53 @@
     +body-2
 
 .content
-    margin-bottom: 32px
+    // margin-bottom: 32px
     +caption-1
-    color: $neutrals4
+    color: $neutrals5
+
+.programsItem
+    &:before
+      position: absolute
+      content: ""
+      top: 31%
+      height: 25px
+      width: 25px
+      background: $neutrals3 
+      clip-path: polygon(100% 0, 0 100% , 0 0)
+      z-index: 1 
+      +f
+        top: 35%
+      +c
+        top: 38%
+      +m
+        top: 43%
+        height: 35px
+        width: 35px
+
+.tip
+    top: 31%
+    width: 25px
+    height: 25px
+    border-left: 0 solid #23262F
+    border-right: 25px solid transparent
+    border-top: 25px solid #23262F
+    margin: 0
+    position: absolute 
+    z-index: 1
+    +f
+        top: 35%
+    +c
+        top: 38%
+    +m
+        top: 43%
+    +a
+        top: 47%
+    +s 
+        top: 43% 
+
+.clipStar 
+    background: gold
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+    display: inline-block
+    height: 20px
+    width: 20px
