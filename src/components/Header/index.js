@@ -38,15 +38,15 @@ const navLinks = [
     dropdown: [
       {
         title: "Find a Life Design Coach",
-        url: "/life",
+        url: "/",
       },
       {
         title: "Find a Life Design Trainer",
-        url: "/life",
+        url: "/",
       },
       {
         title: "Online Workout Training",
-        url: "/life",
+        url: "/",
       },
     ],
   },
@@ -55,15 +55,15 @@ const navLinks = [
     dropdown: [
       {
         title: "Accessories",
-        url: "/life",
+        url: "/",
       },
       {
         title: "Supplements",
-        url: "/life",
+        url: "/",
       },
       {
         title: "Merchandise",
-        url: "/life",
+        url: "/",
       },
     ],
   },
@@ -72,31 +72,31 @@ const navLinks = [
     dropdown: [
       {
         title: "Customer Stoties",
-        url: "/life",
+        url: "/customer-stories",
       },
       {
         title: "Coach Stories",
-        url: "/life",
-      },
-      {
-        title: "Institutional Stories",
-        url: "/life",
-      },
-      {
-        title: "Press",
-        url: "/life",
+        url: "/coach-stories",
       },
       {
         title: "Events",
-        url: "/life",
+        url: "/events",
+      },
+      {
+        title: "Institutional Stories",
+        url: "/instituitional-stories",
+      },
+      {
+        title: "Press",
+        url: "/press",
       },
       {
         title: "Reports",
-        url: "/life",
+        url: "/reports",
       },
       {
         title: "Fit Mafia",
-        url: "/life",
+        url: "/fit-mafia",
       },
     ],
   },

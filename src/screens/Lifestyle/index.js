@@ -3,11 +3,10 @@ import styles from "./Lifestyle.module.sass";
 import Hero from "./Hero";
 import Community from "../../components/Community";
 
-const Lifestyle = () => {
+const Lifestyle = ({ title }) => {
   return (
     <>
-      <Hero />
-      <Community />
+      <Hero title={title} />
     </>
   );
 };

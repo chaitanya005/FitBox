@@ -45,6 +45,69 @@ function App() {
             </Page>
           )}
         />
+        <Route
+          exact
+          path="/fit-mafia"
+          render={() => (
+            <Page>
+              <Lifestyle title={"Fit Mafia"} />
+            </Page>
+          )}
+        />
+        <Route
+          exact
+          path="/instituitional-stories"
+          render={() => (
+            <Page>
+              <Lifestyle title={"Instituitional Stories"} />
+            </Page>
+          )}
+        />
+        <Route
+          exact
+          path="/reports"
+          render={() => (
+            <Page>
+              <Lifestyle title={"Reports"} />
+            </Page>
+          )}
+        />
+        <Route
+          exact
+          path="/press"
+          render={() => (
+            <Page>
+              <Lifestyle title={"Press"} />
+            </Page>
+          )}
+        />
+        <Route
+          exact
+          path="/customer-stories"
+          render={() => (
+            <Page>
+              <Class01 title={"Customer Stories"} />
+            </Page>
+          )}
+        />
+        <Route
+          exact
+          path="/coach-stories"
+          render={() => (
+            <Page>
+              <Class01 title={"Coach Stories"} />
+            </Page>
+          )}
+        />
+        <Route
+          exact
+          path="/events"
+          render={() => (
+            <Page>
+              <Class01 title={"Events"} />
+            </Page>
+          )}
+        />
         {/* <Route
           exact
           path="/features"
@@ -105,15 +168,6 @@ function App() {
           render={() => (
             <Page>
               <Class02Details />
-            </Page>
-          )}
-        />
-        <Route
-          exact
-          path="/lifestyle"
-          render={() => (
-            <Page>
-              <Lifestyle />
             </Page>
           )}
         />

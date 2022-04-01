@@ -213,12 +213,12 @@ const Catalog = () => {
             <Card className={styles.card} item={x} key={index} />
           ))}
         </div>
-        <div className={styles.btns}>
+        {/* <div className={styles.btns}>
           <button className={cn("button-stroke", styles.button)}>
             <span>Discover more</span>
             <Icon name="arrow-bottom" size="8" />
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

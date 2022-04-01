@@ -61,7 +61,7 @@ const ModalTrainer = ({ item, visible, onClose }) => {
         <Slider className="trainer-slider" {...settings}>
           {item.courses.map((x, index) => (
             <div className={styles.slide} key={index} onClick={onClose}>
-              <Link className={cn("trainer-item", styles.item)} to={x.url}>
+              <Link className={cn("trainer-item", styles.item)} to={"/"}>
                 <div className={styles.preview}>
                   <img
                     srcSet={x.image}

@@ -4,12 +4,12 @@ import Breadcrumbs from "./Breadcrumbs";
 import Catalog from "./Catalog";
 import Testimonials from "../../components/Testimonials";
 
-const Class01 = () => {
+const Class01 = ({ title }) => {
   return (
     <>
-      <Breadcrumbs />
+      <Breadcrumbs title={title} />
       <Catalog />
-      <Testimonials className="section-pb" />
+      {/* <Testimonials className="section-pb" /> */}
     </>
   );
 };

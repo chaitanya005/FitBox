@@ -10,7 +10,7 @@ const items = [
     title: "Lifestyle",
     items: [
       {
-        url: "/article",
+        url: "/",
         title: "7 Impossibly Hard Yoga Moves to Master",
         avatar: "/images/content/avatar-5.png",
         author: "Porter Daniel",
@@ -21,7 +21,7 @@ const items = [
         categoryContent: "fitness",
       },
       {
-        url: "/article",
+        url: "/",
         title: "Keep It Chill: How To Do a Water Salutation",
         avatar: "/images/content/avatar-2.png",
         author: "Clemens Reilly",
@@ -32,7 +32,7 @@ const items = [
         categoryContent: "yoga",
       },
       {
-        url: "/article",
+        url: "/",
         title: "Keep It Chill: How To Do a Water Salutation",
         avatar: "/images/content/avatar-3.png",
         author: "Lorine Parker",
@@ -43,7 +43,7 @@ const items = [
         categoryContent: "new",
       },
       {
-        url: "/article",
+        url: "/",
         title: "7 Impossibly Hard Yoga Moves to Master",
         avatar: "/images/content/avatar-1.png",
         author: "Felipa Kub",
@@ -54,7 +54,7 @@ const items = [
         categoryContent: "featured",
       },
       {
-        url: "/article",
+        url: "/",
         title: "Fun Pose Friday: Half Camel With Raised Toe Pose",
         avatar: "/images/content/avatar-4.png",
         author: "Porter Daniel",
@@ -65,7 +65,7 @@ const items = [
         categoryContent: "fitness",
       },
       {
-        url: "/article",
+        url: "/",
         title: "7 Impossibly Hard Yoga Moves to Master",
         avatar: "/images/content/avatar-2.png",
         author: "Clemens Reilly",
@@ -81,7 +81,7 @@ const items = [
     title: "Fitness",
     items: [
       {
-        url: "/article",
+        url: "/",
         title: "Keep It Chill: How To Do a Water Salutation",
         avatar: "/images/content/avatar-2.png",
         author: "Clemens Reilly",
@@ -92,7 +92,7 @@ const items = [
         categoryContent: "yoga",
       },
       {
-        url: "/article",
+        url: "/",
         title: "Keep It Chill: How To Do a Water Salutation",
         avatar: "/images/content/avatar-3.png",
         author: "Lorine Parker",
@@ -103,7 +103,7 @@ const items = [
         categoryContent: "new",
       },
       {
-        url: "/article",
+        url: "/",
         title: "7 Impossibly Hard Yoga Moves to Master",
         avatar: "/images/content/avatar-1.png",
         author: "Felipa Kub",
@@ -114,7 +114,7 @@ const items = [
         categoryContent: "featured",
       },
       {
-        url: "/article",
+        url: "/",
         title: "Fun Pose Friday: Half Camel With Raised Toe Pose",
         avatar: "/images/content/avatar-4.png",
         author: "Porter Daniel",
@@ -125,7 +125,7 @@ const items = [
         categoryContent: "fitness",
       },
       {
-        url: "/article",
+        url: "/",
         title: "7 Impossibly Hard Yoga Moves to Master",
         avatar: "/images/content/avatar-2.png",
         author: "Clemens Reilly",
@@ -141,7 +141,7 @@ const items = [
     title: "Mindfulness",
     items: [
       {
-        url: "/article",
+        url: "/",
         title: "7 Impossibly Hard Yoga Moves to Master",
         avatar: "/images/content/avatar-5.png",
         author: "Porter Daniel",
@@ -152,7 +152,7 @@ const items = [
         categoryContent: "fitness",
       },
       {
-        url: "/article",
+        url: "/",
         title: "Keep It Chill: How To Do a Water Salutation",
         avatar: "/images/content/avatar-2.png",
         author: "Clemens Reilly",
@@ -163,7 +163,7 @@ const items = [
         categoryContent: "yoga",
       },
       {
-        url: "/article",
+        url: "/",
         title: "Keep It Chill: How To Do a Water Salutation",
         avatar: "/images/content/avatar-3.png",
         author: "Lorine Parker",
@@ -174,7 +174,7 @@ const items = [
         categoryContent: "new",
       },
       {
-        url: "/article",
+        url: "/",
         title: "7 Impossibly Hard Yoga Moves to Master",
         avatar: "/images/content/avatar-1.png",
         author: "Felipa Kub",
@@ -188,12 +188,12 @@ const items = [
   },
 ];
 
-const Hero = () => {
+const Hero = ({ title }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
     <div className={cn("section", styles.section)}>
       <div className={cn("container", styles.container)}>
-        <h2 className={cn("hero", styles.title)}>Lifestyle</h2>
+        <h2 className={cn("hero", styles.title)}>{title}</h2>
         <div className={styles.info}>
           Track your workouts, get better results, and be the best version of
           you. Less thinking, more lifting.
@@ -219,11 +219,11 @@ const Hero = () => {
             </ScrollParallax>
           ))}
         </div>
-        <div className={styles.btns}>
+        {/* <div className={styles.btns}>
           <button className={cn("button-stroke button-small", styles.button)}>
             Load more
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

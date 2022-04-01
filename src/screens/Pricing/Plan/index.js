@@ -154,7 +154,7 @@ const Plan = () => {
             width: "fit-content",
           }}
         >
-          <span>6 months</span>
+          <span>3 months</span>
           <Switch
             onChange={handleChange}
             checked={checked}
