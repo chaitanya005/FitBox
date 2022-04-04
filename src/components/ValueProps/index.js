@@ -9,9 +9,7 @@ const ValueProps = ({ className, items, title }) => {
     <div className={cn(className, styles.section)}>
       <div className={cn("container", styles.container)}>
         <div className={styles.head}>
-          <div className={cn("stage-small", styles.stage)}>
-            New workouts added every week
-          </div>
+          <div className={cn("stage-small", styles.stage)}></div>
           <div className={cn("h2", styles.title)}>{title}</div>
         </div>
         <div className={styles.list}>
@@ -23,7 +21,7 @@ const ValueProps = ({ className, items, title }) => {
                   dangerouslySetInnerHTML={{ __html: x.icon }}
                 ></div>
               )}
-              {x.img && <img src={x.img} alt="" />}
+              {x.img && <img className={styles.icon} src={x.img} alt="" />}
               <div className={styles.category}>{x.title}</div>
               <div className={styles.content}>{x.content}</div>
             </ScrollParallax>

@@ -32,12 +32,26 @@ const Intro = ({ scrollToRef }) => {
           </ScrollParallax>
         </div>
         <div className={styles.wrap}>
-          <h2 className={cn("h1", styles.title)}>
-            Train smarter, get stronger.
-          </h2>
+          <h2 className={cn("h1", styles.title)}>Let's Fix Fitness</h2>
           <div className={styles.text}>
-            Fitness Pro helps track your workouts, get better results, and be
-            the best version of you. Less thinking, more lifting 🔥🏀
+            <ul>
+              <li className={styles.flexitems}>
+                <div className={styles.uldot}></div>
+                <div>Behavioural Economics</div>
+              </li>
+              <li className={styles.flexitems}>
+                <div className={styles.uldot}></div>
+                <div>Cognitive Psychology</div>
+              </li>
+              <li className={styles.flexitems}>
+                <div className={styles.uldot}></div>
+                <div>Neuroscience</div>
+              </li>
+              <li className={styles.flexitems}>
+                <div className={styles.uldot}></div>
+                <div>Higher-order-Thinking</div>
+              </li>
+            </ul>
           </div>
           <Link className={cn("button", styles.button)} to="/">
             Take a test

@@ -8,15 +8,15 @@ import ScrollParallax from "../../../components/ScrollParallax";
 import Dropdown from "../../../components/Dropdown";
 
 // data
-import { trainersList } from "../../../mocks/trainers";
+import { trainersList, customersList } from "../../../mocks/trainers";
 
 const SlickArrow = ({ currentSlide, slideCount, children, ...props }) => (
   <button {...props}>{children}</button>
 );
 
-const Team = () => {
+const Team = ({ title }) => {
   const options = [];
-  trainersList.map((x) => options.push(x.title));
+  customersList.map((x) => options.push(x.title));
 
   const [direction, setDirection] = useState(options[0]);
 
@@ -53,14 +53,10 @@ const Team = () => {
     <div className={styles.section}>
       <div className={cn("container", styles.container)}>
         <div className={styles.head}>
-          <h2 className={cn("h2", styles.title)}>Meet our pro trainers</h2>
-          <div className={styles.info}>
-            From all over the world, we select and provide you a team of
-            seasoned trainers. What's more, the 1-on-1 live practice mode helps
-            you quickly get great results.
-          </div>
+          <h2 className={cn("h2", styles.title)}>{title}</h2>
+          <div className={styles.info}></div>
           <div className={styles.nav}>
-            {trainersList.map((x, index) => (
+            {customersList.map((x, index) => (
               <button
                 className={cn(styles.btn, {
                   [styles.active]: x.title === direction,
@@ -81,7 +77,7 @@ const Team = () => {
         </div>
         <div className={styles.wrap}>
           <Slider className={cn("team-slider", styles.slider)} {...settings}>
-            {trainersList
+            {customersList
               .find((x) => x.title === direction)
               .courses.map((x, index) => (
                 <ScrollParallax className={styles.slide} key={index}>

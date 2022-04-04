@@ -5,38 +5,8 @@ import styles from "./Book.module.sass";
 import Icon from "../../../components/Icon";
 import Image from "../../../components/Image";
 import ScrollParallax from "../../../components/ScrollParallax";
-const items = [
-  {
-    title: "For the beginners",
-    color: "#45B26B",
-    images: "/images/content/user.svg",
-    alt: "user",
-    content: "You never workout before, it’s now a good start",
-  },
-  {
-    title: "Advanced classes",
-    color: "#9757D7",
-    images: "/images/content/medal-1.svg",
-    alt: "medal",
-    content: "You never workout before, it’s now a good start",
-  },
-  {
-    title: "Premium (limited)",
-    color: "#3772FF",
-    images: "/images/content/lightning.svg",
-    alt: "lightning",
-    content: "You never workout before, it’s now a good start",
-  },
-  {
-    title: "Premium (limited)",
-    color: "#9757D7",
-    images: "/images/content/lightning.svg",
-    alt: "lightning",
-    content: "You never workout before, it’s now a good start",
-  },
-];
 
-const Book = ({ btnHide }) => {
+const Book = ({ btnHide, title, items }) => {
   return (
     <div className={cn("", styles.section)}>
       <div className={cn("container", styles.container)}>
@@ -85,13 +55,13 @@ const Book = ({ btnHide }) => {
           </ScrollParallax>
         </div>
         <div className={styles.wrap}>
-          <h2 className={cn("h2", styles.title)}>Book a class</h2>
+          <h2 className={cn("h2", styles.title)}>{title}</h2>
           <div className={styles.list}>
             {items.map((x, index) => (
               <div className={styles.item} key={index}>
                 <div
                   className={styles.icon}
-                  style={{ backgroundColor: x.color }}
+                  // style={{ backgroundColor: x.color }}
                 >
                   <img src={x.images} alt={x.alt} />
                 </div>
@@ -105,7 +75,7 @@ const Book = ({ btnHide }) => {
           {!btnHide ? (
             <div className={styles.btns}>
               <Link className={cn("button", styles.button)} to="/">
-                <span>Take a Test</span>
+                <span>Book a Class</span>
               </Link>
             </div>
           ) : (

@@ -108,6 +108,11 @@ const navLinks = [
 
 const socials = [
   {
+    title: "youtube",
+    size: "16",
+    url: "#",
+  },
+  {
     title: "facebook",
     size: "16",
     url: "#",

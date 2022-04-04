@@ -8,8 +8,13 @@
 .container
     display: flex
     max-width: 100%
+    border-bottom: 1px solid rgba($neutrals3, .3)
+    border-color: $neutrals3
     +m
         display: block
+
+.copycontainer
+    border: none
 
 .body
     +m
@@ -99,9 +104,8 @@
         padding-top: 40px
 
 .link
-    text-transform: uppercase
     +button-2
-    color: $neutrals4
+    color: $neutrals5
     transition: color .2s
     &:hover
         color: $neutrals8
@@ -157,3 +161,20 @@
             fill: $neutrals8
     &:not(:last-child)
         margin-right: 24px
+
+.footerSub
+    border: 1px solid $neutrals3
+    padding: 50px
+    margin: 50px
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    +m
+        margin: 50px 0
+
+.fitBox
+    text-align: center
+    font-size: 42px
+    color: $y
+    +builttitel
+    letter-spacing: 2px

@@ -5,32 +5,32 @@ import ScrollParallax from "../../../components/ScrollParallax";
 
 const items = [
   {
-    title: "Download",
+    title: "Dream",
     color: "#3772FF",
-    images: "/images/content/download.svg",
+    images: "/images/content/steps/1.png",
     content:
-      "Fitness Pro tracks your workouts, get better results, and be the best version of you.",
+      "It all starts with a dream, an imagination. We help you dream, Imagine and visualize an enriched and fulfilling life with our evalution test.",
   },
   {
-    title: "Choose your trainner",
+    title: "Design",
     color: "#9757D7",
-    images: "/images/content/whistle.svg",
+    images: "/images/content/steps/2.png",
     content:
-      "Fitness Pro tracks your workouts, get better results, and be the best version of you.",
+      "Design your goals and your ideal life with the help of our mental, nutritional and physical coaches",
   },
   {
-    title: "Set the goals",
+    title: "Plan",
     color: "#EF466F",
-    images: "/images/content/medal.svg",
+    images: "/images/content/steps/3.png",
     content:
-      "Fitness Pro tracks your workouts, get better results, and be the best version of you.",
+      "Get a custom routine, program and diet that balances all the aspects of fitness based on your specific goals.",
   },
   {
-    title: "Workout time",
+    title: "Execute",
     color: "#45B26B",
-    images: "/images/content/stopwatch.svg",
+    images: "/images/content/steps/4.png",
     content:
-      "Fitness Pro tracks your workouts, get better results, and be the best version of you.",
+      "Consistently work towards your goals with complete accountability from your coaches and perfect your life design.",
   },
 ];
 
@@ -39,10 +39,9 @@ const Steps = ({ scrollToRef }) => {
     <div className={cn("section", styles.section)} ref={scrollToRef}>
       <div className={cn("container", styles.container)}>
         <div className={styles.head}>
-          <h2 className={cn("h2", styles.title)}>How it works</h2>
+          <h2 className={cn("h2", styles.title)}>How it work</h2>
           <div className={styles.info}>
-            Stacks is a production-ready library of stackable content blocks
-            built in React Native.
+            Help us design your life for greatness!
           </div>
         </div>
         <div className={styles.list}>
@@ -50,11 +49,13 @@ const Steps = ({ scrollToRef }) => {
             <ScrollParallax className={styles.item} key={index}>
               <div
                 className={styles.preview}
-                style={{ backgroundColor: x.color }}
+                // style={{ backgroundColor: x.color }}
               >
                 <img src={x.images} alt={`Step ${index}`} />
               </div>
-              {/*  <div className={styles.number}>Step {index + 1}</div> */}
+              <div className={styles.number} style={{ color: x.color }}>
+                Step {index + 1}
+              </div>
               <div className={styles.subtitle}>{x.title}</div>
               <div className={styles.content}>{x.content}</div>
             </ScrollParallax>

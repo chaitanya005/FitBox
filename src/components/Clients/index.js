@@ -5,24 +5,58 @@ import ScrollParallax from "../ScrollParallax";
 
 const list = [
   {
-    title: "Yourstory",
-    url: "/images/content/rotashow.svg",
+    url: "/images/content/home_4/1.png",
   },
   {
-    title: "Forbes",
-    url: "/images/content/waves.svg",
+    url: "/images/content/home_4/2.png",
   },
   {
-    title: "Outlook",
-    url: "/images/content/rotashow.svg",
+    url: "/images/content/home_4/3.png",
   },
   {
-    title: "Fortune",
-    url: "/images/content/travelers.svg",
+    url: "/images/content/home_4/4.png",
   },
   {
-    title: "Harvard Business Review ",
-    url: "/images/content/goldlines.svg",
+    url: "/images/content/home_4/5.png",
+  },
+  {
+    url: "/images/content/home_4/6.png",
+  },
+  {
+    url: "/images/content/home_4/7.png",
+  },
+  {
+    url: "/images/content/home_4/8.png",
+  },
+  {
+    url: "/images/content/home_4/9.png",
+  },
+  {
+    url: "/images/content/home_4/10.png",
+  },
+  {
+    url: "/images/content/home_4/11.png",
+  },
+  {
+    url: "/images/content/home_4/12.png",
+  },
+  {
+    url: "#",
+  },
+  {
+    url: "/images/content/home_4/13.png",
+  },
+  {
+    url: "/images/content/home_4/14.png",
+  },
+  {
+    url: "/images/content/home_4/15.png",
+  },
+  {
+    url: "/images/content/home_4/16.png",
+  },
+  {
+    url: "#",
   },
 ];
 
@@ -35,26 +69,10 @@ const Clients = ({ title, listOne, listTwo }) => {
         </ScrollParallax>
         <div className={styles.list}>
           {list.map((x, index) => (
-            <div className={styles.logo} key={index}>
+            <div className={cn(styles.column, styles.logo)} key={index}>
               <img src={x.url} alt="" />
             </div>
           ))}
-        </div>
-        <div className={styles.list}>
-          {listOne &&
-            listOne.map((x, index) => (
-              <div className={styles.logo} key={index}>
-                <img src={x.url} alt="" />
-              </div>
-            ))}
-        </div>
-        <div className={styles.list}>
-          {listTwo &&
-            listTwo.map((x, index) => (
-              <div className={styles.logo} key={index}>
-                <img src={x.url} alt="" />
-              </div>
-            ))}
         </div>
       </div>
     </div>

@@ -12,6 +12,8 @@
 .title
     margin-bottom: 20px
     text-transform: uppercase
+    +builttitel
+    letter-spacing: 2px
 
 .info
     color: $neutrals3
@@ -89,10 +91,15 @@
     display: flex
     justify-content: center
     align-items: center
-    width: 80px
+    width: 150px
     height: 80px
-    margin: 0 auto 80px
+    margin: 0 auto 60px
     border-radius: 24px
+    +d
+        width: 80px
+        margin: 0 auto 20px
+    img
+        width: 100%
     +m
         margin: 0 0 32px 0
     &:before,
@@ -106,23 +113,29 @@
         border-radius: 50%
         border: 2px solid $neutrals5
     &:before
-        left: -36px
+        left: 0px
+        +d
+            left: -36px
     &:after
-        right: -36px
-
+        right: 0
+        +d
+            right: -36px
 .number
     margin-bottom: 32px
     +caption-2
+    font-size: 16px
     font-weight: 700
     color: $neutrals4
 
 .subtitle
     margin-bottom: 16px
     font-weight: 600
+    font-size: 30px
     text-transform: uppercase
 
 .content
     +caption-1
+    font-size: 16px
     color: $neutrals5
     +dark
         color: $neutrals5

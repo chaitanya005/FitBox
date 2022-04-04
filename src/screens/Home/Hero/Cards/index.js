@@ -7,34 +7,35 @@ const items = [
   {
     title: "BTC/USDT",
     price: "36,641.20",
-    money: "36,641.20",
+    money: "NO OF STUDIO'S",
     negative: "-0.79%",
-    image: "/images/content/currency/bitcoin.svg",
-    url: "/exchange",
+    image: "/images/content/real_time/4_cube.png",
+    url: "/",
   },
   {
     title: "BTC/USDT",
     price: "36,641.20",
-    money: "36,641.20",
+    money: "NO OF TRAINERS",
     positive: "+0.79%",
-    image: "/images/content/currency/chainlink.svg",
-    url: "/exchange",
+    image: "/images/content/real_time/3_cube.png",
+    url: "/",
   },
   {
     title: "BTC/USDT",
     price: "36,641.20",
-    money: "36,641.20",
+    money: "NO OF USERS",
     positive: "+0.79%",
-    image: "/images/content/currency/monero.svg",
-    url: "/exchange",
+    image: "/images/content/real_time/2_cube.png",
+    url: "/",
   },
   {
     title: "BTC/USDT",
     price: "36,641.20",
-    money: "36,641.20",
+    money: "LIVE'S CHANGED",
     positive: "+0.79%",
-    image: "/images/content/currency/maid.svg",
-    url: "/exchange",
+    image: "/images/content/real_time/1_cube.png",
+    url: "/",
+    height: "250%",
   },
 ];
 
@@ -44,17 +45,17 @@ const Cards = ({ className }) => {
       {items.map((x, index) => (
         <Link className={styles.card} key={index} to={x.url}>
           <div className={styles.icon}>
-            <img src={x.image} alt="Currency" />
+            <img src={x.image} alt="Currency" style={{ maxHeight: x.height }} />
           </div>
           <div className={styles.details}>
             <div className={styles.line}>
-              <div className={styles.title}>{x.title}</div>
-              {x.positive && (
+              <div className={styles.title}>{/* x.title */}</div>
+              {/* x.positive && (
                 <div className={styles.positive}>{x.positive}</div>
               )}
               {x.negative && (
                 <div className={styles.negative}>{x.negative}</div>
-              )}
+              ) */}
             </div>
             <div className={styles.price}>{x.price}</div>
             <div className={styles.money}>{x.money}</div>

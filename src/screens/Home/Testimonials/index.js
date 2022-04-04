@@ -115,7 +115,7 @@ const Programs = ({ classNameTitle, title, classNameSection, scrollToRef }) => {
       <div className={cn("container", styles.container)}>
         <div className={styles.top}>
           <div className={cn(styles.title, "h2")}>
-            {"For Any SPace, at any Pace"}
+            {"Celebrity influencer opinion"}
           </div>
         </div>
         <div className={styles.wrap}>
@@ -128,11 +128,11 @@ const Programs = ({ classNameTitle, title, classNameSection, scrollToRef }) => {
                       {x.content}
                       <br />
                       <div style={{ marginTop: "2%" }}>
-                        <div class={styles.clipStar}></div>
-                        <div class={styles.clipStar}></div>
-                        <div class={styles.clipStar}></div>
-                        <div class={styles.clipStar}></div>
-                        <div class={styles.clipStar}></div>
+                        <div className={styles.clipStar}></div>
+                        <div className={styles.clipStar}></div>
+                        <div className={styles.clipStar}></div>
+                        <div className={styles.clipStar}></div>
+                        <div className={styles.clipStar}></div>
                       </div>
                     </div>
                   </div>

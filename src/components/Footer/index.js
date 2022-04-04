@@ -13,20 +13,62 @@ const menu = [
     url: "/life-design",
   },
   {
-    title: "Future Desgin",
-    url: "/life-design",
-  },
-  {
     title: "Community Desgin",
-    url: "/life-design",
+    url: "/community-design",
   },
   {
-    title: "About",
+    title: "Future Desgin",
+    url: "/future-design",
+  },
+  {
+    title: "About Us",
     url: "/about",
   },
   {
-    title: "Stores",
-    url: "#",
+    title: "Stories",
+    url: "/stories",
+  },
+];
+
+const subMenu = [
+  {
+    title: "Become a Affiliate",
+    url: "/",
+  },
+  {
+    title: "Become a Sponsor",
+    url: "/",
+  },
+  {
+    title: "Hire us to speak",
+    url: "/",
+  },
+  {
+    title: "Private Coaching",
+    url: "/",
+  },
+  {
+    title: "Log In / Sign Up",
+    url: "/",
+  },
+];
+
+const subMenuTwo = [
+  {
+    title: "Corportate",
+    url: "/",
+  },
+  {
+    title: "Franchisee",
+    url: "/",
+  },
+  {
+    title: "Advertise with us",
+    url: "/",
+  },
+  {
+    title: "Report a bug",
+    url: "/",
   },
 ];
 
@@ -59,7 +101,7 @@ const socials = [
 ];
 
 const Footer = () => {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   return (
     <footer className={styles.footer}>
@@ -100,19 +142,52 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.col}>
-            <div className={styles.category}>contact</div>
-            <div className={styles.info}>
-              <p>43252 Borer Mountains</p>
-              <p>Zackerychester</p>
-              <p>Bahamas</p>
-              <p>732-528-4945</p>
+            <div className={cn(styles.item, { [styles.active]: visible })}>
+              <div className={styles.menu}>
+                {subMenu.map((x, index) => (
+                  <NavLink
+                    className={styles.link}
+                    activeClassName={styles.active}
+                    to={x.url}
+                    key={index}
+                  >
+                    {x.title}
+                  </NavLink>
+                ))}
+              </div>
             </div>
           </div>
           <div className={styles.col}>
-            <div className={styles.category}>newsletter</div>
+            <div className={cn(styles.item, { [styles.active]: visible })}>
+              <div className={styles.menu}>
+                {subMenuTwo.map((x, index) => (
+                  <NavLink
+                    className={styles.link}
+                    activeClassName={styles.active}
+                    to={x.url}
+                    key={index}
+                  >
+                    {x.title}
+                  </NavLink>
+                ))}
+              </div>
+            </div>
+            {/* <div className={styles.category}>newsletter</div>
             <div className={styles.info}>
               Subscribe our newsletter to get more free design course and
               resource.
+            </div>
+            <Subscription
+              className={styles.subscription}
+              placeholder="Enter your email"
+            /> */}
+          </div>
+        </div>
+        <div className={cn("container", styles.container)}>
+          <div className={styles.footerSub}>
+            <div className={styles.fitBox}>FIXBOX LIFE DESGIN</div>
+            <div className={styles.info}>
+              Download our Fitbox Life Desgin brochure to get more information
             </div>
             <Subscription
               className={styles.subscription}
@@ -122,9 +197,11 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.foot}>
-        <div className={cn("container", styles.container)}>
+        <div
+          className={cn("container", styles.container, styles.copycontainer)}
+        >
           <div className={styles.copyright}>
-            Copyright © 2021 UI8 LLC. All rights reserved
+            Copyright © 2022 FITBOX All rights reserved
           </div>
           <div className={styles.socials}>
             {socials.map((x, index) => (

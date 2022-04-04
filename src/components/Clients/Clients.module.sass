@@ -6,13 +6,20 @@
     font-weight: 600
     // font-size: 24px
     text-transform: uppercase
+    +builttitel
+    letter-spacing: 2px
+
+.clients
+    height: 300px
+
 
 .list
-    display: flex
+    // display: flex
     margin: 0 -12px
     +d
         margin: 0 -8px
     +m
+        display: flex
         margin: 0 -32px
         overflow: auto
         overflow-x: auto 
@@ -27,10 +34,14 @@
             flex-shrink: 0
             width: 32px
             height: 1px
+        
+.column
+    float: left
+    width: 16.66%
 
 .logo
     flex: 1
-    margin: 0 12px
+    // margin: 0 12px
     +d
         margin: 0 8px
     +m
