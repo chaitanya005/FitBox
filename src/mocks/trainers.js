@@ -393,20 +393,6 @@ export const customersList = [
         courses: courses,
         socials: socials,
       },
-      {
-        name: "Baron Toy",
-        image: "/images/content/avatar-1.png",
-        position: "Yoga Master",
-        courses: courses,
-        socials: socials,
-      },
-      {
-        name: "Kacie Kiehn",
-        image: "/images/content/avatar-2.png",
-        position: "Yoga Master",
-        courses: courses,
-        socials: socials,
-      },
     ],
   },
   {
@@ -454,13 +440,6 @@ export const customersList = [
         courses: courses,
         socials: socials,
       },
-      {
-        name: "Baron Toy",
-        image: "/images/content/avatar-1.png",
-        position: "Yoga Master",
-        courses: courses,
-        socials: socials,
-      },
     ],
   },
   {
@@ -504,20 +483,6 @@ export const customersList = [
       {
         name: "Ila Reinger",
         image: "/images/content/avatar-6.png",
-        position: "Yoga Master",
-        courses: courses,
-        socials: socials,
-      },
-      {
-        name: "Baron Toy",
-        image: "/images/content/avatar-1.png",
-        position: "Yoga Master",
-        courses: courses,
-        socials: socials,
-      },
-      {
-        name: "Kacie Kiehn",
-        image: "/images/content/avatar-2.png",
         position: "Yoga Master",
         courses: courses,
         socials: socials,

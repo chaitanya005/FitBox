@@ -13,6 +13,41 @@ import Team from "../Home/Team";
 import Community from "../../components/Community";
 import Video from "./Video";
 
+const whatYouGetItems = [
+  {
+    title: "Revolutionary Experaince",
+    color: "#45B26B",
+    images: "/images/content/home_7/1.png",
+    alt: "user",
+    content:
+      "A fitness experience like no other. With custom goals, personal coaches, holistic fitness approach that transforms mind-body and soul.",
+  },
+  {
+    title: "INNOVATIVE TRACKING SYSTEM",
+    color: "#9757D7",
+    images: "/images/content/home_7/2.png",
+    alt: "medal",
+    content:
+      "Easy to use tracking system that will help you map progress and tweak your program",
+  },
+  {
+    title: "TRANSFORMATIVE ACCOUNTABILITY",
+    color: "#3772FF",
+    images: "/images/content/home_7/3.png",
+    alt: "lightning",
+    content:
+      "Life coaches and trainers as your accountability partners keeping you on track and committed to the program",
+  },
+  {
+    title: "DISRUPTIVE RESULTS",
+    color: "#9757D7",
+    images: "/images/content/home_7/4.png",
+    alt: "lightning",
+    content:
+      "Results that impact your life, relationships, fitness, and persona growth, This is more than chasing cosmetic changes.",
+  },
+];
+
 const About = () => {
   const scrollToRef = useRef(null);
   return (
@@ -27,7 +62,7 @@ const About = () => {
           over the volume for a perfect physique"
       />
       <Steps scrollToRef={scrollToRef} />
-      <Book btnHide={true} />
+      <Book btnHide={true} items={whatYouGetItems} />
       <br />
       <br />
       <Program />

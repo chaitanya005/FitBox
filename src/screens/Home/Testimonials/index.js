@@ -45,6 +45,18 @@ const items = [
     content:
       "Fitbox is a powerful app that can connect a lot of services I'm using, it is very flexible.",
   },
+  {
+    title: "Advanced",
+    url: "/class02-details",
+    color: "#9757D7",
+    image: "/images/content/medal-1.svg",
+    alt: "medal",
+    name: "Kacie Kiehn",
+    userImg: "/images/content/avatar-2.png",
+    position: "Yoga Master",
+    content:
+      "Fitbox is a powerful app that can connect a lot of services I'm using, it is very flexible.",
+  },
 ];
 
 const courses = [

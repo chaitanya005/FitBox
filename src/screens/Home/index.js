@@ -53,19 +53,19 @@ const whyUsItems = [
     title: "FIRST PRINCIPLES THINKING",
     content:
       "Using the proven framework of design thinking we understand, explore and materialize your life design Trash.",
-    color: "#9757D7",
+    color: "#ff8c37",
   },
   {
     title: "HUMAN-CENTRIC APPROACH",
     content:
       "We plan and develop custom routines and plans based on your specific needs, desires, and abilities that puts you in the centre of all the action, always.",
-    color: "#EF466F",
+    color: "#3cff37",
   },
   {
     title: "DATA-DRIVEN ACTION",
     content:
       "With micro and macro tracking systems and accountability partners, we use data to adapt routines based on data analysis and interpretation.",
-    color: "#45B26B",
+    color: "#ff3737",
   },
   {
     title: "AN EXERCISE IN SIMPLICITY",

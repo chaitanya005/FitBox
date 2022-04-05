@@ -57,20 +57,21 @@ const Book = ({ btnHide, title, items }) => {
         <div className={styles.wrap}>
           <h2 className={cn("h2", styles.title)}>{title}</h2>
           <div className={styles.list}>
-            {items.map((x, index) => (
-              <div className={styles.item} key={index}>
-                <div
-                  className={styles.icon}
-                  // style={{ backgroundColor: x.color }}
-                >
-                  <img src={x.images} alt={x.alt} />
+            {items &&
+              items.map((x, index) => (
+                <div className={styles.item} key={index}>
+                  <div
+                    className={styles.icon}
+                    // style={{ backgroundColor: x.color }}
+                  >
+                    <img src={x.images} alt={x.alt} />
+                  </div>
+                  <div className={styles.details}>
+                    <div className={styles.subtitle}>{x.title}</div>
+                    <div className={styles.content}>{x.content}</div>
+                  </div>
                 </div>
-                <div className={styles.details}>
-                  <div className={styles.subtitle}>{x.title}</div>
-                  <div className={styles.content}>{x.content}</div>
-                </div>
-              </div>
-            ))}
+              ))}
           </div>
           {!btnHide ? (
             <div className={styles.btns}>

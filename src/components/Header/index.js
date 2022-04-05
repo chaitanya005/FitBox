@@ -207,20 +207,20 @@ const Headers = () => {
                 </a>
               ))}
             </div>
-            {/* <Link
+            <Link
               className={cn("button-stroke button-small", styles.button)}
               to="/"
             >
               Login
-            </Link> */}
+            </Link>
           </div>
         </div>
-        {/* <Link
+        <Link
           className={cn("button-stroke button-small", styles.button)}
           to="/"
         >
           Login
-        </Link> */}
+        </Link>
         <button
           className={cn(styles.burger, { [styles.active]: visibleNav })}
           onClick={() => setVisibleNav(!visibleNav)}
