@@ -107,6 +107,18 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.body}>
         <div className={cn("container", styles.container)}>
+          <div className={styles.footerSub}>
+            <div className={styles.fitBox}>FIXBOX LIFE DESGIN</div>
+            <div className={styles.info}>
+              Download our Fitbox Life Desgin brochure to get more information
+            </div>
+            <Subscription
+              className={styles.subscription}
+              placeholder="Enter your email"
+            />
+          </div>
+        </div>
+        <div className={cn("container", styles.container)}>
           <div className={styles.col}>
             <div className={styles.box}>
               <Link className={styles.logo} to="/">
@@ -117,16 +129,11 @@ const Footer = () => {
                   alt="Fitness Pro"
                 />
               </Link>
-              <Theme className={styles.theme} />
+              {/* <Theme className={styles.theme} /> */}
             </div>
+          </div>
+          <div className={styles.col}>
             <div className={cn(styles.item, { [styles.active]: visible })}>
-              <div
-                className={styles.category}
-                onClick={() => setVisible(!visible)}
-              >
-                footer nav
-                <Icon name="arrow-bottom" size="9" />
-              </div>
               <div className={styles.menu}>
                 {menu.map((x, index) => (
                   <NavLink
@@ -181,18 +188,6 @@ const Footer = () => {
               className={styles.subscription}
               placeholder="Enter your email"
             /> */}
-          </div>
-        </div>
-        <div className={cn("container", styles.container)}>
-          <div className={styles.footerSub}>
-            <div className={styles.fitBox}>FIXBOX LIFE DESGIN</div>
-            <div className={styles.info}>
-              Download our Fitbox Life Desgin brochure to get more information
-            </div>
-            <Subscription
-              className={styles.subscription}
-              placeholder="Enter your email"
-            />
           </div>
         </div>
       </div>

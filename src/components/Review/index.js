@@ -11,6 +11,7 @@ const items = [
     logo: "./images/content/velocity9.svg",
     comment:
       "This is the single greatest thing to happen in Fitness, after the advent of dumbells",
+    image: "/images/content/avatar-1.png",
   },
   {
     author: "Dorthy Runolfsdottir",
@@ -18,6 +19,7 @@ const items = [
     logo: "./images/content/travelers.svg",
     comment:
       "If you have not tried the Life Design program, believe me, you are living in a cocoon",
+    image: "/images/content/avatar-2.png",
   },
   {
     author: "Dorthy Runolfsdottir",
@@ -25,6 +27,7 @@ const items = [
     logo: "./images/content/goldlines.svg",
     comment:
       "Life Design has shown me the unbelievable impact of Life Choices on my mind, body and soul.",
+    image: "/images/content/avatar-2.png",
   },
 ];
 
@@ -58,7 +61,10 @@ const Review = ({ className }) => {
           <Slider className="review-slider" {...settings}>
             {items.map((x, index) => (
               <div className={styles.slide} key={index}>
-                <div className={cn("review-item", styles.item)}>
+                <div className={cn("review-item", styles.item, styles.flex)}>
+                  <div className={styles.avatar}>
+                    <img src={x.image} alt="Avatar" />
+                  </div>
                   <div className={styles.title}>{x.comment}</div>
                 </div>
               </div>

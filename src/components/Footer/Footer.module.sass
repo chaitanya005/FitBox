@@ -22,12 +22,12 @@
         padding-top: 32px
 
 .col
-    flex: 0 0 30.5%
+    flex: 0 0 25%
     padding: 80px 86px 64px
     +x
         padding: 80px 64px 64px
     +d
-        flex: 0 0 34%
+        flex: 0 0 25%
     +t
         padding: 64px 32px 48px
     +m
@@ -37,10 +37,7 @@
             border-color: $neutrals3
     &:first-child
         display: flex
-        flex: 0 0 39%
         padding-left: 0
-        +d
-            flex: 0 0 32%
         +m
             display: block
     &:nth-child(3)
@@ -52,20 +49,24 @@
             border-left: none
         +dark
             border-color: $neutrals3
+    &:nth-child(4)
+        border-left: 1px solid $neutrals3
+        +m
+            border: none
 
 .box
     display: flex
     flex-direction: column
     align-items: flex-start
-    margin-right: 112px
-    +x
-        margin-right: 76px
-    +d
-        margin-right: 40px
-    +t
-        margin-right: 24px
-    +m
-        margin: 0 0 40px
+    // margin-right: 112px
+    // +x
+    //     margin-right: 76px
+    // +d
+    //     margin-right: 40px
+    // +t
+    //     margin-right: 24px
+    // +m
+    //     margin: 0 0 40px
 
 .logo
     display: inline-block

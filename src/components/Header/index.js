@@ -19,17 +19,17 @@ const navLinks = [
       {
         title: "Future Design",
         // icon: "user",
-        url: "/life-design",
+        url: "/future-design",
       },
       {
         title: "Community Design",
         // icon: "user",
-        url: "/life-design",
+        url: "/community-design",
       },
       {
         title: "Conscience Design",
         // icon: "user",
-        url: "/life-design",
+        url: "/conscience-design",
       },
     ],
   },
@@ -38,15 +38,15 @@ const navLinks = [
     dropdown: [
       {
         title: "Find a Life Design Coach",
-        url: "/",
+        url: "/find-a-life-design-coach",
       },
       {
         title: "Find a Life Design Trainer",
-        url: "/",
+        url: "/find-a-life-design-trainer",
       },
       {
         title: "Online Workout Training",
-        url: "/",
+        url: "/online-workout-training",
       },
     ],
   },
@@ -55,15 +55,15 @@ const navLinks = [
     dropdown: [
       {
         title: "Accessories",
-        url: "/",
+        url: "/accessories",
       },
       {
         title: "Supplements",
-        url: "/",
+        url: "/supplements",
       },
       {
         title: "Merchandise",
-        url: "/",
+        url: "/merchandise",
       },
     ],
   },
@@ -219,7 +219,16 @@ const Headers = () => {
           className={cn("button-stroke button-small", styles.button)}
           to="/"
         >
-          Login
+          <img
+            src="/images/content/person_icon.png"
+            alt="person"
+            style={{
+              position: "relative",
+              height: "30px",
+              marginRight: "15px",
+            }}
+          />
+          Log In
         </Link>
         <button
           className={cn(styles.burger, { [styles.active]: visibleNav })}

@@ -66,7 +66,8 @@
     padding: 0 16px
     box-shadow: 0px 16px 48px rgba(31, 47, 70, 0.1)
     border-radius: 12px
-    background: $neutrals8
+    background: #2e3236 !important
+    border: 1px solid #adadad
     visibility: hidden
     opacity: 0
     transition: all .3s
@@ -83,26 +84,26 @@
         background: $neutrals2
         +d
             background: none
-    &:before
-        content: ""
-        position: absolute
-        left: 50%
-        bottom: 100%
-        width: 24px
-        height: 12px
-        transform: translateX(-50%)
-        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='9' fill='none' viewBox='0 0 24 9'%3E%3Cpath d='M6.343 2.657L0 9h24l-6.343-6.343a8 8 0 0 0-11.314 0z' fill='%23fcfcfd'/%3E%3C/svg%3E") no-repeat 50% 100% / 100% auto
-        +d
-            display: none
-        +dark
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='9' fill='none' viewBox='0 0 24 9'%3E%3Cpath d='M6.343 2.657L0 9h24l-6.343-6.343a8 8 0 0 0-11.314 0z' fill='%2323262F'/%3E%3C/svg%3E")
+    // &:before
+    //     content: ""
+    //     position: absolute
+    //     left: 50%
+    //     bottom: 100%
+    //     width: 24px
+    //     height: 12px
+    //     transform: translateX(-50%)
+    //     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='9' fill='none' viewBox='0 0 24 9'%3E%3Cpath d='M6.343 2.657L0 9h24l-6.343-6.343a8 8 0 0 0-11.314 0z' fill='%23fcfcfd'/%3E%3C/svg%3E") no-repeat 50% 100% / 100% auto
+    //     +d
+    //         display: none
+    //     +dark
+    //         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='9' fill='none' viewBox='0 0 24 9'%3E%3Cpath d='M6.343 2.657L0 9h24l-6.343-6.343a8 8 0 0 0-11.314 0z' fill='%2323262F'/%3E%3C/svg%3E")
 
 .link
     display: flex
     align-items: center
     padding: 16px 0
     +button-2
-    color: $neutrals4
+    color: #adadad !important
     transition: color .2s
     +d
         height: 56px
@@ -122,24 +123,26 @@
         transition: fill .2s
         +m
             margin-right: 12px
+    &:hover
+        color: $y !important
     &:hover,
     &.active
         +m
-            background: $neutrals7
+            // background: $neutrals7
         svg
             fill: $neutrals3
             +m
                 fill: $neutrals4
         +dark
-            color: $neutrals8
+            color: $y !important
             svg
                 fill: $neutrals8
             +m
-                background: $neutrals3
+                // background: $neutrals3
                 svg
                     fill: $neutrals8
     &:not(:last-child)
-        border-bottom: 1px solid $neutrals6
+        border-bottom: 1px solid #adadad !important
         +d
             border: none
         +dark

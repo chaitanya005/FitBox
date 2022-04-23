@@ -9,7 +9,7 @@ const items = [
     price: "36,641.20",
     money: "NO OF STUDIO'S",
     negative: "-0.79%",
-    image: "/images/content/real_time/4_cube.png",
+    image: "/images/content/4_cube.png",
     url: "/",
   },
   {
@@ -17,7 +17,7 @@ const items = [
     price: "36,641.20",
     money: "NO OF TRAINERS",
     positive: "+0.79%",
-    image: "/images/content/real_time/3_cube.png",
+    image: "/images/content/3_cube.png",
     url: "/",
   },
   {
@@ -25,7 +25,7 @@ const items = [
     price: "36,641.20",
     money: "NO OF USERS",
     positive: "+0.79%",
-    image: "/images/content/real_time/2_cube.png",
+    image: "/images/content/2_cube.png",
     url: "/",
   },
   {
@@ -33,9 +33,8 @@ const items = [
     price: "36,641.20",
     money: "LIVE'S CHANGED",
     positive: "+0.79%",
-    image: "/images/content/real_time/1_cube.png",
+    image: "/images/content/1_cube.png",
     url: "/",
-    height: "250%",
   },
 ];
 
@@ -46,11 +45,7 @@ const Cards = ({ className }) => {
         items.map((x, index) => (
           <Link className={styles.card} key={index} to={x.url}>
             <div className={styles.icon}>
-              <img
-                src={x.image}
-                alt="Currency"
-                style={{ maxHeight: x.height }}
-              />
+              <img src={x.image} alt="Currency" />
             </div>
             <div className={styles.details}>
               <div className={styles.line}>

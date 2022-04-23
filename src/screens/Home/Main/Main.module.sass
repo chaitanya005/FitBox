@@ -1,0 +1,143 @@
+@import ../../../styles/helpers
+
+.section
+    text-align: center
+    padding: 40px 0
+    border: none
+
+.stage
+    margin-bottom: 16px
+
+.title
+    text-transform: uppercase
+    margin: 0 auto 32px
+    font-size: 64px
+    letter-spacing: 1px
+    +builttitel
+    +t
+        max-width: 550px
+
+.text
+    margin: 0 auto 48px
+    color: $neutrals4
+
+.button
+    color: #fff
+    background: $neutrals1
+    border: 3px solid $y
+    &:hover
+        border: 3px solid #fff
+        color: $y
+        background: transparent
+    text-transform: uppercase
+    +builttitel
+    letter-spacing: 1px
+    font-size: 22px
+    padding: 20px  40px
+
+.container
+    display: flex
+    +d 
+        display: block
+    +m 
+        display: block
+
+.arrow
+    width:10px
+    margin: 20px 49.5%
+    +m
+        margin:1px 47%
+
+.line
+    margin-top:14px
+    height:50px
+    background: white
+    width:3px
+    margin-left: 8.5px
+
+.point
+    width: 0
+    border-left: 10px solid transparent
+    border-right: 10px solid transparent
+    border-top: 15px solid white    
+
+// .tWrap
+//     position: relative
+//     display: inline-block
+//     width: 100px
+//     height: 120px
+//     line-height: 120px
+//     font-size: 120px
+//     border: 15px solid rgba(0,0,0,0.5)
+//     -webkit-perspective: 400px
+//     perspective: 400px
+//     -webkit-box-shadow: 1px 1px 4px #000
+//     -moz-box-shadow: 1px 1px 4px #000
+//     box-shadow: 1px 1px 4px #000
+
+// .tbg
+//     background: #121212
+//     position: absolute
+//     color: #f2c200
+//     width: 100%
+//     height: 100%
+
+// .tup
+//     height: 50%
+//     width: 100%
+//     position: absolute
+//     z-index: 10
+//     transform-style: preserve-3d
+//     -webkit-transform-origin: 50% 100%
+//     box-shadow: 0px 1px 3px rgb(0 0 0 / 90%)
+//     transition: all 0.3s linear
+
+// .tFront
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0px
+//     overflow: hidden
+//     -webkit-backface-visibility: hidden
+//     background: #151515
+
+// .tBack
+//     -webkit-transform: rotateX(-180deg)
+//     background: #121212
+//     color: #f2c200
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     top: 0px
+//     overflow: hidden
+//     -webkit-backface-visibility: hidden
+
+// .tDown
+//     height: 50%
+//     top: 50%
+//     width: 100%
+//     position: absolute
+//     overflow: hidden
+//     z-index: 1
+//     background: #151515
+//     box-shadow: 0px 1px 3px rgb(0 0 0 / 90%)
+//     transition: all 0.3s linear
+    
+
+// .arrow7 
+//   width:110px
+//   height:30px
+//   display: flex
+//   background: 
+//     linear-gradient(currentColor 0 0) left /30px 10px,
+//     linear-gradient(currentColor 0 0) right/30px 10px,
+//     conic-gradient(from -136deg at             15px  50%,#0000 ,currentColor 1deg 90deg,#0000 91deg) 30px              0/100% 100%,
+//     conic-gradient(from   44deg at calc(100% - 15px) 50%,#0000 ,currentColor 1deg 90deg,#0000 91deg) calc(100% - 30px) 0/100% 100%
+//   background-repeat: no-repeat
+//   animation: a7 .5s infinite alternate
+
+// .arrow7:before
+//   content: ""
+//   flex: 1
+//   background: inherit
+//   transform: rotate(90deg)

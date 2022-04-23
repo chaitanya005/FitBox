@@ -9,7 +9,7 @@ const items = [
     color: "#ff8c37",
     images: "/images/content/steps/1.png",
     content:
-      "It all starts with a dream, an imagination. We help you dream, Imagine and visualize an enriched and fulfilling life with our evalution test.",
+      "We help you dream, Imagine and visualize an enriched and fulfilling life with our evalution test.",
   },
   {
     title: "Design",
@@ -30,7 +30,7 @@ const items = [
     color: "#3772ff",
     images: "/images/content/steps/4.png",
     content:
-      "Consistently work towards your goals with complete accountability from your coaches and perfect your life design.",
+      "Consistently work towards your goals with complete accountability from your coaches .",
   },
 ];
 

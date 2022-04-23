@@ -301,48 +301,42 @@ export const customersList = [
       {
         name: "Baron Toy",
         image: "/images/content/avatar-1.png",
-        position:
-          "Life Design has helped us greatly reduce the customer churn rate at our gym. When customers are finding so much value, they tend to stick with us for much longer.",
+        position: "Yoga Master",
         courses: courses,
         socials: socials,
       },
       {
         name: "Kacie Kiehn",
         image: "/images/content/avatar-2.png",
-        position:
-          "The program has helped us to focus on delivering value rather than worrying about getting new customers.",
+        position: "Yoga Master",
         courses: courses,
         socials: socials,
       },
       {
         name: "Marcelino Hettinger",
         image: "/images/content/avatar-3.png",
-        position:
-          "Life Design has helped us to move away from the prevalent cookie-cutter approach and towards a more realistic and practical fitness lifestyle.",
+        position: "Yoga Master",
         courses: courses,
         socials: socials,
       },
       {
         name: "Rosemarie Hintz",
         image: "/images/content/avatar-4.png",
-        position:
-          "Enrolling with Life Design has helped my gym not only get profitable but also build credibility and awareness through the rating metrics.",
+        position: "Yoga Master",
         courses: courses,
         socials: socials,
       },
       {
         name: "Syble Prohaska",
         image: "/images/content/avatar-5.png",
-        position:
-          "Being a gym owner for many years, I never thought that I would see the flaws of the fitness Industry addressed, but Life Design has made me a bellever in the impossible.",
+        position: "Yoga Master",
         courses: courses,
         socials: socials,
       },
       {
         name: "Ila Reinger",
         image: "/images/content/avatar-6.png",
-        position:
-          "Life Design has helped us reduce our operating cost through the cohort model now we can focus on delivering a great fitness experience rather than worry about how to manage the increasing cost.",
+        position: "Yoga Master",
         courses: courses,
         socials: socials,
       },

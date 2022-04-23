@@ -16,16 +16,16 @@ const Hero = ({ scrollToRef }) => {
           </h1>
           <div className={styles.btns}>
             <Link className={cn("button", styles.button)} to="/">
-              Take a Test
+              Play
             </Link>
           </div>
+          <ScrollButton
+            onScroll={() =>
+              scrollToRef.current.scrollIntoView({ behavior: "smooth" })
+            }
+            className={styles.scroll}
+          />
         </ScrollParallax>
-        <ScrollButton
-          onScroll={() =>
-            scrollToRef.current.scrollIntoView({ behavior: "smooth" })
-          }
-          className={styles.scroll}
-        />
         <div className={styles.gallery}>
           <ScrollParallax className={styles.preview} animateIn="fadeInUp">
             <Image

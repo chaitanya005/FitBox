@@ -19,15 +19,12 @@ const About = ({ items, title, imgUrl, bgRequired }) => {
               {items &&
                 items.map((x, index) => (
                   <ScrollParallax className={styles.item} key={index}>
+                    {x.color && (
+                      <div className={styles.number} style={{ color: x.color }}>
+                        0{index + 1}
+                      </div>
+                    )}
                     <div style={{ display: "flex", gap: "1rem" }}>
-                      {x.color && (
-                        <div
-                          className={styles.number}
-                          style={{ color: x.color }}
-                        >
-                          0{index + 1}
-                        </div>
-                      )}
                       <div className={styles.subtitle}>{x.title}</div>
                     </div>
                     <div className={styles.content}>{x.content}</div>
@@ -63,8 +60,8 @@ const About = ({ items, title, imgUrl, bgRequired }) => {
                 <Image
                   srcSet="/images/content/phones@2x.png 2x"
                   srcSetDark="/images/content/phones-dark@2x.png 2x"
-                  src="/images/content/phones.png"
-                  srcDark="/images/content/phones-dark.png"
+                  src="/images/content/Image_2.png"
+                  srcDark="/images/content/Image_2.png"
                   alt="Phones"
                 />
                 <ScrollParallax className={styles.preview} animateIn="fadeInUp">
@@ -77,7 +74,7 @@ const About = ({ items, title, imgUrl, bgRequired }) => {
                 <ScrollParallax className={styles.preview} animateIn="fadeInUp">
                   <img
                     srcSet="/images/content/apple@2x.png 2x"
-                    src="/images/content/apple.png"
+                    src="/images/content/yellow_apple.png"
                     alt="Apple"
                   />
                 </ScrollParallax>
